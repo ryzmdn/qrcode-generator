@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>QR Code Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main class="card">
+      <div class="card-heading">
+        <h3 class="card-title">QR Code Generator</h3>
+        <p class="card-subtitle">
+          Paste any URL that starts with http:// or https:// to create a QR code
+          automatically.
+        </p>
+      </div>
+      <div class="card-body">
+        <div>
+          <label for="url" class="block text-sm font-medium leading-6 text-gray-900">Paste url:</label>
+          <div class="input-box">
+            <div class="icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244">
+              </svg>
+            </div>
+            <input type="url" name="url" id="url" class="input-url" autocomplete="off" spellcheck="false" placeholder="Paste your url here" required>
+          </div>
+        </div>
+
+        <div class="content">
+          <button type="button" id="button-generate" onclick="generateQRCode()">
+            Generate
+          </button>
+
+          <div class="qrcode-box">
+            <div id="qrcode"></div>
+          </div>
+
+          <button type="button" id="button-download" onclick="downloadQRCode()" disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-download">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3">
+            </svg>
+            Download QR Code
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
