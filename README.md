@@ -17,7 +17,7 @@ The QR code generator created using HTML, CSS, and JavaScript is a web applicati
 
 ## Screenshot
 
-![Preview image](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+!Preview image](https://github.com/user-attachments/assets/9beef17f-0119-40cf-a9d3-85d41dbac588)
 
 ## Installation
 
