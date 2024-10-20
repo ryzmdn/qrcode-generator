@@ -25,7 +25,7 @@ Clone this repository using the steps below.
 
 ```bash
   # Clone repository
-  git clone https://github.com/riizkyyrmdnn/qrcode-generator.git
+  git clone https://github.com/ryzmdn/qrcode-generator.git
 
   # Change directory folder
   cd qrcode-generator
